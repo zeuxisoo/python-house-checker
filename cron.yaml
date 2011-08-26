@@ -1,0 +1,4 @@
+cron:
+- description: check public house content
+  url: /cron
+  schedule: every 5 hours
