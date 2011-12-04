@@ -13,7 +13,7 @@ def fetch_current_data():
 
 	year_month = subject_result.group('year_month')
 
-	# 3-person Urban District
+	# 3-person Urban District [4 is review, 28 is success]
 	found_out_result = re.compile(r'<td style="padding:5px 0px 5px 4px;">.*?</td>', re.MULTILINE).findall(html)[4]
 	found_out_number = re.compile(r'<td style="padding:5px 0px 5px 4px;">(.*?)</td>').search(found_out_result).group(1)
 
